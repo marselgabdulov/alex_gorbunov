@@ -9,8 +9,6 @@
   height: 100vh;
   height: 100%;
   width: 100%;
-  display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,22 +88,16 @@
     justify-content: space-between;
     width: 50%;
     margin-left: 25%;
-
-    .menu__social-icon {
-      width: auto;
-      height: auto;
-
-      a {
-        color: white;
-        text-decoration: none;
-        font-weight: 500;
-      }
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
     }
   }
 }
 
-// mobile
-@media (max-width: 599px) {
+// mobile portrait
+@media (min-width: 320px) and (max-width: 479px) {
   .menu__close-button {
     top: 2%;
     right: 2.5em;
@@ -129,18 +121,37 @@
       font-size: 0.85em;
     }
   }
+}
 
-  .menu__social-icon {
-    margin-top: 0.5em;
-    svg {
-      width: 1.2em;
-      height: 1.2em;
+// mobile landscape
+@media (min-width: 480px) and (max-width: 767px) {
+  .menu__close-button {
+    top: 2%;
+    right: 2.5em;
+
+    .button-icon {
+      width: 1.75em;
+      height: 1.75em;
+    }
+  }
+
+  .menu__list {
+    a {
+      font-size: 0.75em;
+      font-weight: 500;
+    }
+  }
+
+  .menu__email,
+  .menu__phone {
+    a {
+      font-size: 0.75em;
     }
   }
 }
 
 // tublet-portrait
-@media (min-width: 600px) {
+@media (min-width: 768px) and (max-width: 999px) {
   .menu__close-button {
     top: 1.25em;
     right: 2.5em;
@@ -160,95 +171,16 @@
       line-height: 2em;
     }
   }
-
-  .menu__social-icon {
-    margin-top: 0.5em;
-  }
 }
 
 // tablet-landscape
-@media (min-width: 900px) {
-  .menu__close-button {
-    top: 1.5%;
-    right: 2.5%;
-
-    .button-icon {
-      width: 1.9em;
-      height: 1.9em;
-    }
-  }
-
-  .menu__list {
-    line-height: 2em;
-    a {
-      font-size: 1em;
-
-      font-weight: 600;
-    }
-  }
-
-  .menu__social-icon {
-    margin-top: 0.5em;
-  }
+@media (min-width: 1000px) and (max-width: 1279px) {
 }
 
 // desktop
-@media (min-width: 1200px) {
-  .menu__close-button {
-    top: 5%;
-    right: 5%;
-
-    .button-icon {
-      width: 1.9em;
-      height: 1.9em;
-    }
-  }
-
-  .menu__list {
-    line-height: 2em;
-    a {
-      font-size: 1.25em;
-    }
-  }
-
-  .menu__email,
-  .menu__phone {
-    a {
-      font-size: 1em;
-    }
-  }
-
-  .menu__social-icon {
-    margin-top: 0.5em;
-  }
+@media (min-width: 1280px) and (max-width: 1919px) {
 }
 
-// desktop x-large
-@media (min-width: 1800px) {
-  .menu__close-button {
-    top: 4%;
-    right: 5%;
-
-    .button-icon {
-      width: 1.9em;
-      height: 1.9em;
-    }
-  }
-
-  .menu__list {
-    a {
-      font-size: 1.25em;
-    }
-  }
-
-  .menu__email,
-  .menu__phone {
-    a {
-      font-size: 1em;
-    }
-  }
-
-  .menu__social-icon {
-    margin-top: 0.5em;
-  }
+// desktop XXL
+@media (min-width: 1920px) {
 }

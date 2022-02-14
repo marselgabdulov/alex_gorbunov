@@ -15,6 +15,12 @@
 
   a {
     color: white;
+    text-decoration: none;
+
+    &:hover {
+      transition: all 0.1s ease-in-out;
+      color: #f77905;
+    }
   }
 }
 
@@ -24,54 +30,59 @@
   display: -ms-flex;
   display: flex;
   flex-direction: column;
-
-  a {
-    text-decoration: none;
-    &:hover {
-      transition: all 0.1s ease-in-out;
-      color: #f77905;
-    }
-  }
-}
-
-.logo {
-  // font-family: "Marck Script", cursive;
-  font-weight: 900;
-  a {
-    text-decoration: none;
-  }
 }
 
 .social {
-  display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  a {
-    text-decoration: none;
-  }
 }
 
 .social {
-  display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  a {
-    text-decoration: none;
-  }
 }
 
 .developer {
   color: #a6a2a2;
 }
 
-// mobile
-@media (max-width: 599px) {
+// mobile portrait
+@media (min-width: 320px) and (max-width: 479px) {
+  .logo {
+    top: 2%;
+    left: 2.5%;
+    font-size: 1.9em;
+  }
+
+  .menu__button {
+    top: 0.75%;
+    right: 1.9em;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .social {
+    line-height: 1.5em;
+    font-size: 0.75em;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .developer {
+    display: none;
+  }
+}
+
+// mobile landscape
+@media (min-width: 480px) and (max-width: 767px) {
   .logo {
     top: 2%;
     left: 2.5%;
@@ -104,7 +115,7 @@
 }
 
 // tublet-portrait
-@media (min-width: 600px) {
+@media (min-width: 768px) and (max-width: 999px) {
   .logo {
     top: 2.5%;
     left: 2.5%;
@@ -136,7 +147,7 @@
 }
 
 // tablet-landscape
-@media (min-width: 900px) {
+@media (min-width: 1000px) and (max-width: 1279px) {
   .logo {
     top: 2.5%;
     left: 2%;
@@ -174,8 +185,8 @@
   }
 }
 
-// desktop/laptop
-@media (min-width: 1200px) {
+// desktop
+@media (min-width: 1280px) and (max-width: 1919px) {
   .logo {
     top: 5%;
     left: 2.5%;
@@ -209,8 +220,8 @@
   }
 }
 
-// desktop x-large
-@media (min-width: 1800px) {
+// desktop XXL
+@media (min-width: 1920px) {
   .logo {
     top: 5%;
     left: 5%;

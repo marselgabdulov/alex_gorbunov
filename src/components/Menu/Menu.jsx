@@ -43,36 +43,30 @@ function Menu() {
           </div>
 
           <div className="menu__social-links">
-            <div className="menu__social-icon">
-              <a
-                href="https://vk.com/alexgrantshow"
-                title="в контакте"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Vk
-              </a>
-            </div>
-            <div className="menu__social-icon">
-              <a
-                href="https://www.facebook.com/alex.gorbunov.969"
-                title="facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Fb
-              </a>
-            </div>
-            <div className="menu__social-icon">
-              <a
-                href="https://www.instagram.com/gorbunovshowmoscow/?igshid=1mqqjkwnngmk"
-                title="instagram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Inst
-              </a>
-            </div>
+            <a
+              href="https://vk.com/alexgrantshow"
+              title="в контакте"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Vk
+            </a>
+            <a
+              href="https://www.facebook.com/alex.gorbunov.969"
+              title="facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fb
+            </a>
+            <a
+              href="https://www.instagram.com/gorbunovshowmoscow/?igshid=1mqqjkwnngmk"
+              title="instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Inst
+            </a>
           </div>
         </div>
       </div>

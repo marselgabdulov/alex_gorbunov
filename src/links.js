@@ -21,7 +21,7 @@ export const links = [
   },
   {
     to: "/cooperation",
-    name: "взаимодействие",
+    name: "договор",
     title: "как я работаю",
   },
   {
