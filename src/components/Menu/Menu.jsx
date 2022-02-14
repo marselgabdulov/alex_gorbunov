@@ -2,38 +2,8 @@ import * as React from "react"
 import { MenuContext } from "../../MenuContext"
 import { Link } from "gatsby"
 import Cross from "../icons/Cross"
+import { links } from "../../links"
 import "./Menu.scss"
-
-const links = [
-  {
-    to: "/",
-    name: "Главная",
-  },
-  {
-    to: "/about",
-    name: "Обо мне",
-  },
-  {
-    to: "/photos",
-    name: "Фото",
-  },
-  {
-    to: "/videos",
-    name: "Видео",
-  },
-  {
-    to: "/cooperation",
-    name: "Взаимодействие",
-  },
-  {
-    to: "/reviews",
-    name: "Отзывы",
-  },
-  {
-    to: "/contacts",
-    name: "Контакты",
-  },
-]
 
 function Menu() {
   const [value, setValue] = React.useContext(MenuContext)

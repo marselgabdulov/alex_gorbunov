@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Burger from "../icons/Burger"
 import "./Header.scss"
 import { MenuContext } from "../../MenuContext"
+import { links } from "../../links"
 
 const Header = () => {
   const [value, setValue] = React.useContext(MenuContext)
@@ -15,7 +16,7 @@ const Header = () => {
         <div
           className="logo"
           data-aos="fade"
-          data-aos-delay="100"
+          data-aos-delay="500"
           data-aos-duration="1200"
           data-aos-once="true"
         >
@@ -30,28 +31,11 @@ const Header = () => {
           data-aos-duration="1200"
           data-aos-once="true"
         >
-          <Link to="/" activeStyle={{ color: "#f77905" }}>
-            Главная
-          </Link>
-          <Link to="/about" activeStyle={{ color: "#f77905" }}>
-            Обо мне
-          </Link>
-          <Link to="/cooperation" activeStyle={{ color: "#f77905" }}>
-            Договор
-          </Link>
-          <Link to="/photos" activeStyle={{ color: "#f77905" }}>
-            Фото
-          </Link>
-          <Link to="/videos" activeStyle={{ color: "#f77905" }}>
-            Видео
-          </Link>
-
-          <Link to="/reviews" activeStyle={{ color: "#f77905" }}>
-            Отзывы
-          </Link>
-          <Link to="/contacts" activeStyle={{ color: "#f77905" }}>
-            Контакты
-          </Link>
+          {links.map((link, index) => (
+            <Link key={index} to={link.to} activeStyle={{ color: "#f77905" }}>
+              {link.name}
+            </Link>
+          ))}
         </div>
         <div
           className="menu__button"
