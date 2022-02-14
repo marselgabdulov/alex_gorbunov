@@ -1,6 +1,6 @@
 .logo,
 .menu,
-.menu-button,
+.menu__button,
 .social,
 .developer {
   position: fixed;
@@ -78,7 +78,7 @@
     font-size: 1.9em;
   }
 
-  .menu-button {
+  .menu__button {
     top: 0.75%;
     right: 1.9em;
     width: 1.5em;
@@ -111,7 +111,7 @@
     font-size: 2em;
   }
 
-  .menu-button {
+  .menu__button {
     top: 2%;
     right: 4%;
     width: 2em;
@@ -143,7 +143,7 @@
     font-size: 1.8em;
   }
 
-  .menu-button {
+  .menu__button {
     display: none;
   }
 
@@ -182,7 +182,7 @@
     font-size: 1.8em;
   }
 
-  .menu-button {
+  .menu__button {
     display: none;
   }
 
@@ -217,7 +217,7 @@
     font-size: 2em;
   }
 
-  .menu-button {
+  .menu__button {
     display: none;
   }
 

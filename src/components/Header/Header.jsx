@@ -2,10 +2,12 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Burger from "../icons/Burger"
 import "./Header.scss"
+import { MenuContext } from "../../MenuContext"
 
 const Header = () => {
-  function handleOpen() {
-    console.log("handle open")
+  const [value, setValue] = React.useContext(MenuContext)
+  function handleMenu() {
+    value === "closed" ? setValue("opened") : setValue("closed")
   }
   return (
     <header>
@@ -53,7 +55,7 @@ const Header = () => {
         </div>
         <div
           className="menu__button"
-          onClick={handleOpen}
+          onClick={handleMenu}
           data-aos="fade"
           data-aos-delay="500"
           data-aos-duration="1200"
