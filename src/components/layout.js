@@ -1,7 +1,8 @@
 import * as React from "react"
+import AOS from "aos"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Header from "./Header/Header"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
@@ -14,6 +15,10 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
+  React.useEffect(() => {
+    AOS.init()
+  }, [])
 
   return (
     <>

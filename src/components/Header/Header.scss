@@ -1,0 +1,246 @@
+.logo,
+.menu,
+.menu-button,
+.social,
+.developer {
+  position: fixed;
+  text-transform: uppercase;
+  z-index: 100000;
+  font-weight: 700;
+
+  svg {
+    fill: white;
+    stroke: white;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.menu,
+.social {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+    &:hover {
+      transition: all 0.1s ease-in-out;
+      color: #f77905;
+    }
+  }
+}
+
+.logo {
+  // font-family: "Marck Script", cursive;
+  font-weight: 900;
+  a {
+    text-decoration: none;
+  }
+}
+
+.social {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.social {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.developer {
+  color: #a6a2a2;
+}
+
+// mobile
+@media (max-width: 599px) {
+  .logo {
+    top: 2%;
+    left: 2.5%;
+    font-size: 1.9em;
+  }
+
+  .menu-button {
+    top: 0.75%;
+    right: 1.9em;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .social {
+    line-height: 1.5em;
+    font-size: 0.75em;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .developer {
+    display: none;
+  }
+}
+
+// tublet-portrait
+@media (min-width: 600px) {
+  .logo {
+    top: 2.5%;
+    left: 2.5%;
+    font-size: 2em;
+  }
+
+  .menu-button {
+    top: 2%;
+    right: 4%;
+    width: 2em;
+    height: 2em;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .developer {
+    display: none;
+  }
+}
+
+// tablet-landscape
+@media (min-width: 900px) {
+  .logo {
+    top: 2.5%;
+    left: 2%;
+    font-size: 1.8em;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .menu,
+  .social {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    line-height: 2em;
+    font-size: 0.75em;
+  }
+
+  .menu {
+    top: 2.5%;
+    right: 2%;
+  }
+
+  .social {
+    bottom: 2.5%;
+    left: 2%;
+  }
+
+  .developer {
+    display: block;
+    bottom: 2.5%;
+    right: 2%;
+    font-size: 0.75em;
+  }
+}
+
+// desktop/laptop
+@media (min-width: 1200px) {
+  .logo {
+    top: 5%;
+    left: 2.5%;
+    font-size: 1.8em;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .menu,
+  .social {
+    line-height: 1.7em;
+    font-size: 0.85em;
+  }
+
+  .menu {
+    top: 5%;
+    right: 2.5%;
+  }
+
+  .social {
+    bottom: 5%;
+    left: 2.5%;
+  }
+
+  .developer {
+    bottom: 5%;
+    right: 2.5%;
+    font-size: 0.85em;
+  }
+}
+
+// desktop x-large
+@media (min-width: 1800px) {
+  .logo {
+    top: 5%;
+    left: 5%;
+    font-size: 2em;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .menu,
+  .social {
+    line-height: 1.8em;
+    font-size: 0.95em;
+    font-size: 0.95em;
+  }
+
+  .menu {
+    top: 5%;
+    right: 5%;
+  }
+
+  .social {
+    bottom: 5%;
+    left: 5%;
+  }
+
+  .developer {
+    bottom: 5%;
+    right: 5%;
+    font-size: 0.95em;
+  }
+}
