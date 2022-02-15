@@ -1,0 +1,135 @@
+.bg {
+  position: relative;
+}
+
+.intro-text {
+  position: fixed;
+  height: auto;
+  text-transform: uppercase;
+  color: white;
+  z-index: 100;
+
+  a {
+    color: white;
+  }
+}
+
+.title,
+.subtitle {
+}
+
+// mobile portrait
+@media (min-width: 320px) and (max-width: 479px) {
+  .intro-text {
+    width: 100%;
+    text-align: center;
+    bottom: 5%;
+    line-height: 36px;
+  }
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
+// mobile landscape
+@media (min-width: 480px) and (max-width: 767px) {
+  .intro-text {
+    width: 100%;
+    text-align: center;
+    bottom: 5%;
+    line-height: 4em;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+}
+
+// tablet-portrait
+@media (min-width: 768px) and (max-width: 999px) {
+  .intro-text {
+    width: 100%;
+    text-align: center;
+    bottom: 5%;
+    line-height: 4em;
+  }
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle,
+  .phone {
+    font-size: 28px;
+  }
+}
+
+// tablet-landscape
+@media (min-width: 1000px) and (max-width: 1279px) {
+  .intro-text {
+    width: auto;
+    margin-left: 2.5%;
+    top: 60%;
+    line-height: 4em;
+  }
+  .title {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 36px;
+  }
+
+  .phone {
+    font-size: 20px;
+  }
+}
+
+// desktop
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .intro-text {
+    width: auto;
+    margin-left: 2.5%;
+    top: 60%;
+    line-height: 4em;
+  }
+  .title {
+    font-size: 56px;
+  }
+
+  .subtitle {
+    font-size: 36px;
+  }
+
+  .phone {
+    font-size: 20px;
+  }
+}
+
+// desktop XXL
+@media (min-width: 1920px) {
+  .intro-text {
+    width: auto;
+    margin-left: 2.5%;
+    top: 60%;
+    line-height: 4em;
+  }
+  .title {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 36px;
+  }
+
+  .phone {
+    font-size: 20px;
+  }
+}
