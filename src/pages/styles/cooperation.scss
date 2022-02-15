@@ -1,0 +1,115 @@
+.cooperation__text {
+  color: #f6f1f1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  a {
+    color: white;
+    font-weight: bold;
+  }
+
+  .cooperation__title {
+    text-transform: uppercase;
+  }
+}
+
+// mobile portrait
+@media (min-width: 320px) and (max-width: 479px) {
+  .cooperation__text {
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    margin-top: 18%;
+    padding-bottom: 0.75%;
+    .cooperation__title {
+      width: 100%;
+    }
+    p {
+      width: 100%;
+    }
+  }
+}
+
+// mobile landscape
+@media (min-width: 480px) and (max-width: 767px) {
+  .cooperation__text {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 25%;
+    padding-bottom: 5%;
+    .cooperation__title {
+      width: 90%;
+    }
+    p {
+      width: 85%;
+    }
+  }
+}
+
+// tablet-portrait
+@media (min-width: 768px) and (max-width: 999px) {
+  .cooperation__text {
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    margin-top: 18%;
+    padding-bottom: 0.75%;
+    .cooperation__title {
+      width: 100%;
+    }
+    p {
+      width: 100%;
+    }
+  }
+}
+
+// tablet-landscape
+@media (min-width: 1000px) and (max-width: 1279px) {
+  .cooperation__text {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-top: 18%;
+    padding-bottom: 0.75%;
+    .cooperation__title {
+      width: 90%;
+    }
+    p {
+      width: 85%;
+    }
+  }
+}
+
+// desktop
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .cooperation__text {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-top: 18%;
+    padding-bottom: 0.75%;
+    .cooperation__title {
+      width: 90%;
+    }
+    p {
+      width: 85%;
+    }
+  }
+}
+
+// desktop XXL
+@media (min-width: 1920px) {
+  .cooperation__text {
+    width: 50%;
+    height: auto;
+    margin-left: 20%;
+    margin-top: 18%;
+    padding-bottom: 0.75%;
+    .cooperation__title {
+      width: 90%;
+    }
+    p {
+      width: 85%;
+    }
+  }
+}

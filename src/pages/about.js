@@ -25,7 +25,7 @@ function AboutPage({ data }) {
 
   return (
     <Layout>
-      <Seo title="Обо мне. Ведущий Алексей Горбунов. +7 985 644 64 89" />
+      <Seo title="Обо мне | Ведущий Алексей Горбунов. +7 985 644 64 89" />
       <TransitionGroup className="background">
         <CSSTransition
           appear={true}
