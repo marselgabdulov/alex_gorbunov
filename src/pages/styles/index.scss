@@ -11,11 +11,8 @@
 
   a {
     color: white;
+    font-weight: bold;
   }
-}
-
-.title,
-.subtitle {
 }
 
 // mobile portrait
@@ -117,7 +114,7 @@
 @media (min-width: 1920px) {
   .intro-text {
     width: auto;
-    margin-left: 2.5%;
+    margin-left: 5%;
     top: 60%;
     line-height: 4em;
   }

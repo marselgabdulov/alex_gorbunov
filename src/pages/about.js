@@ -41,7 +41,13 @@ function AboutPage({ data }) {
           ></div>
         </CSSTransition>
       </TransitionGroup>
-      <div className="about__text">
+      <div
+        className="about__text"
+        data-aos="fade"
+        data-aos-delay="500"
+        data-aos-duration="1200"
+        data-aos-once="true"
+      >
         <h1 className="about__title">
           Привет, я хочу немного рассказать вам о себе. <br />
         </h1>

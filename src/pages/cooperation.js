@@ -8,7 +8,13 @@ function CooperationPage() {
   return (
     <Layout>
       <Seo title="Обо мне | Ведущий Алексей Горбунов. +7 985 644 64 89" />
-      <div className="cooperation__text">
+      <div
+        className="cooperation__text"
+        data-aos="fade"
+        data-aos-delay="500"
+        data-aos-duration="1200"
+        data-aos-once="true"
+      >
         <h1 className="cooperation__title">этапы подготовки</h1>
         <p>
           1. Мы встречаемся и знакомимся. Я рассказываю вам, как я обычно
