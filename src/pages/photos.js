@@ -11,13 +11,7 @@ const PhotosPage = ({ data }) => {
   return (
     <Layout>
       <Seo title="Мои фото | Ведущий Алексей Горбунов. +7 985 644 64 89" />
-      <div
-        className="photos"
-        data-aos="fade"
-        data-aos-delay="500"
-        data-aos-duration="1200"
-        data-aos-once="true"
-      >
+      <div className="photos">
         <h1>Мои фото:</h1>
         <Gallery images={data} setViewerState={setViewerState} />
         <PhotoViewer

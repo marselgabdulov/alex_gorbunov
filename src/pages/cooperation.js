@@ -7,7 +7,7 @@ import "./styles/cooperation.scss"
 function CooperationPage() {
   return (
     <Layout>
-      <Seo title="Обо мне | Ведущий Алексей Горбунов. +7 985 644 64 89" />
+      <Seo title="Взаимодействие | Ведущий Алексей Горбунов. +7 985 644 64 89" />
       <div
         className="cooperation__text"
         data-aos="fade"

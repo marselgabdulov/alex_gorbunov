@@ -12,13 +12,7 @@ const IndexPage = () => (
     <div className="bg">
       <BGVideo />
       <BGVideoMobile />
-      <div
-        className="intro-text"
-        data-aos="fade"
-        data-aos-delay="500"
-        data-aos-duration="1200"
-        data-aos-once="true"
-      >
+      <div className="intro-text">
         <h1 className="title">Ведущий Алексей Горбунов</h1>
         <h2 className="subtitle">Умный московский юмор</h2>
         <a href="tel:+79856446489" className="phone">

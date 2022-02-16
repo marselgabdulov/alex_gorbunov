@@ -9,13 +9,7 @@ function ContactsPage() {
     <Layout>
       <Seo title="Контакты | Ведущий Алексей Горбунов. +7 985 644 64 89" />
       <div className="page-wrapper">
-        <div
-          className="contacts"
-          data-aos="fade"
-          data-aos-delay="500"
-          data-aos-duration="1200"
-          data-aos-once="true"
-        >
+        <div className="contacts">
           <h1>Контакты:</h1>
 
           <a href="tel:+79856446489">+7 985 644 64 89</a>

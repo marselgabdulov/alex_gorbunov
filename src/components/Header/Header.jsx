@@ -13,48 +13,22 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <div
-          className="logo"
-          data-aos="fade"
-          data-aos-delay="500"
-          data-aos-duration="1200"
-          data-aos-once="true"
-        >
+        <div className="logo">
           <Link to="/" title="вернуться на главную">
             АГ
           </Link>
         </div>
-        <div
-          className="menu"
-          data-aos="fade"
-          data-aos-delay="500"
-          data-aos-duration="1200"
-          data-aos-once="true"
-        >
+        <div className="menu">
           {links.map((link, index) => (
             <Link key={index} to={link.to} activeStyle={{ color: "#f77905" }}>
               {link.name}
             </Link>
           ))}
         </div>
-        <div
-          className="menu__button"
-          onClick={handleMenu}
-          data-aos="fade"
-          data-aos-delay="500"
-          data-aos-duration="1200"
-          data-aos-once="true"
-        >
+        <div className="menu__button">
           <Burger />
         </div>
-        <div
-          className="social"
-          data-aos="fade"
-          data-aos-delay="500"
-          data-aos-duration="1200"
-          data-aos-once="true"
-          data-aos-anchor-placement="center-bottom"
-        >
+        <div className="social">
           <a
             className="social__link"
             href="https://www.facebook.com/alex.gorbunov.969"
@@ -80,14 +54,7 @@ const Header = () => {
             Vk
           </a>
         </div>
-        <div
-          className="developer"
-          data-aos="fade"
-          data-aos-delay="500"
-          data-aos-duration="1200"
-          data-aos-once="true"
-          data-aos-anchor-placement="center-bottom"
-        >
+        <div className="developer">
           Разработан{" "}
           <a
             href="https://marsdev.ru/"
