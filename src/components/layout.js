@@ -31,6 +31,14 @@ const Layout = ({ children }) => {
           name="facebook-domain-verification"
           content="ocyaz6ny0c441yaalwjv6fv07kgswh"
         />
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style="display:none"
+            src="https://www.facebook.com/tr?id=3075912476015954&ev=PageView&noscript=1"
+          />
+        </noscript>
       </Helmet>
 
       <MenuContext.Provider value={[value, setValue]}>
