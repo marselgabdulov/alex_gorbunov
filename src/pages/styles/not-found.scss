@@ -1,0 +1,63 @@
+a {
+  color: white;
+}
+
+// mobile portrait
+@media (min-width: 320px) and (max-width: 479px) {
+  .not-found-page {
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    margin-top: 18%;
+  }
+}
+
+// mobile landscape
+@media (min-width: 480px) and (max-width: 767px) {
+  .not-found-page {
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    margin-top: 18%;
+  }
+}
+
+// tablet-portrait
+@media (min-width: 768px) and (max-width: 999px) {
+  .not-found-page {
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    margin-top: 18%;
+  }
+}
+
+// tablet-landscape
+@media (min-width: 1000px) and (max-width: 1279px) {
+  .not-found-page {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-top: 18%;
+  }
+}
+
+// desktop
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .not-found-page {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-top: 18%;
+  }
+}
+
+// desktop XXL
+@media (min-width: 1920px) {
+  .not-found-page {
+    width: 70%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 20%;
+  }
+}
