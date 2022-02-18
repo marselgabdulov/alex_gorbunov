@@ -4,7 +4,7 @@ module.exports = {
     title: `Алексей Горбунов. Ведущий. Шоумен. +7 985 644 64 89`,
     description: `Алексей Горбунов. Ведущий праздничных мероприятий любого формата. Веду свадьбы, корпоративы, дни рождения, детские и городские праздники и т.д. +7 985 644 64 89`,
     author: `marsel.gabdulov@gmail.com`,
-    siteUrl: `marsdev.ru`,
+    siteUrl: `https://alexeygorbunov.com`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
-        pixelId: "ocyaz6ny0c441yaalwjv6fv07kgswh",
+        pixelId: "3075912476015954",
       },
     },
     {

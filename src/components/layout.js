@@ -3,7 +3,7 @@ import AOS from "aos"
 import { useStaticQuery, graphql } from "gatsby"
 import { MenuContext } from "../MenuContext"
 import Menu from "./Menu/Menu"
-
+import { Helmet } from "react-helmet"
 import Header from "./Header/Header"
 import "./layout.scss"
 
@@ -25,11 +25,20 @@ const Layout = ({ children }) => {
   }, [])
 
   return (
-    <MenuContext.Provider value={[value, setValue]}>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <Menu />
-      <main>{children}</main>
-    </MenuContext.Provider>
+    <>
+      <Helmet>
+        <meta
+          name="facebook-domain-verification"
+          content="ocyaz6ny0c441yaalwjv6fv07kgswh"
+        />
+      </Helmet>
+
+      <MenuContext.Provider value={[value, setValue]}>
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <Menu />
+        <main>{children}</main>
+      </MenuContext.Provider>
+    </>
   )
 }
 
