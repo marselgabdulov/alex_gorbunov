@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Burger from "../icons/Burger"
+import BurgerIcon from "../icons/BurgerIcon"
 import "./Header.scss"
 import { MenuContext } from "../../MenuContext"
 import { links } from "../../links"
@@ -26,7 +26,7 @@ const Header = () => {
           ))}
         </div>
         <div className="menu__button">
-          <Burger />
+          <BurgerIcon />
         </div>
         <div className="social">
           <a

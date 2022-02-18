@@ -1,7 +1,7 @@
 import * as React from "react"
 import { MenuContext } from "../../MenuContext"
 import { Link } from "gatsby"
-import Cross from "../icons/Cross"
+import CrossIcon from "../icons/CrossIcon"
 import { links } from "../../links"
 import "./Menu.scss"
 
@@ -17,7 +17,7 @@ function Menu() {
       <div className={value === "opened" ? "menu--opened" : "menu--closed"}>
         <button className="menu__close-button" onClick={handleMenu}>
           <div className="button-icon">
-            <Cross />
+            <CrossIcon />
           </div>
         </button>
 
