@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Алексей Горбунов. Ведущий. Шоумен. +7 985 644 64 89`,
+    description: `Алексей Горбунов. Ведущий праздничных мероприятий любого формата. Веду свадьбы, корпоративы, дни рождения, детские и городские праздники и т.д. +7 985 644 64 89`,
+    author: `marsel.gabdulov@gmail.com`,
+    siteUrl: `marsdev.ru`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -16,6 +16,12 @@ module.exports = {
         host: "https://alexeygorbunov.com",
         sitemap: "https://alexeygorbunov/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "ocyaz6ny0c441yaalwjv6fv07kgswh",
       },
     },
     {
