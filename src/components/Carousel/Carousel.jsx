@@ -2,7 +2,6 @@ import * as React from "react"
 import LeftIcon from "../icons/LeftIcon"
 import RightIcon from "../icons/RightIcon"
 import CrossIcon from "../icons/CrossIcon"
-import KeyboardEventHandler from "react-keyboard-event-handler"
 import "./Carousel.scss"
 
 const Carousel = ({
@@ -28,28 +27,26 @@ const Carousel = ({
       : setCurrentIndex(prevIndex => prevIndex + 1)
   }
   return (
-    <KeyboardEventHandler>
-      <div className={`carousel--${viewerState}`}>
-        <div className="carousel__bg" onClick={handleViewer}></div>
-        <div className="carousel__content">
-          <button className="btn carousel__left" onClick={handlePrev}>
-            <LeftIcon />
-          </button>
-          <div
-            className="current-image"
-            style={{
-              backgroundImage: `url(${images.allFile.edges[currentIndex].node.childrenImageSharp[0].fluid.originalImg})`,
-            }}
-          ></div>
-          <button className="btn carousel__right" onClick={handleNext}>
-            <RightIcon />
-          </button>
-        </div>
-        <button className="btn carousel__close" onClick={handleViewer}>
-          <CrossIcon />
+    <div className={`carousel--${viewerState}`}>
+      <div className="carousel__bg" onClick={handleViewer}></div>
+      <div className="carousel__content">
+        <button className="btn carousel__left" onClick={handlePrev}>
+          <LeftIcon />
+        </button>
+        <div
+          className="current-image"
+          style={{
+            backgroundImage: `url(${images.allFile.edges[currentIndex].node.childrenImageSharp[0].fluid.originalImg})`,
+          }}
+        ></div>
+        <button className="btn carousel__right" onClick={handleNext}>
+          <RightIcon />
         </button>
       </div>
-    </KeyboardEventHandler>
+      <button className="btn carousel__close" onClick={handleViewer}>
+        <CrossIcon />
+      </button>
+    </div>
   )
 }
 

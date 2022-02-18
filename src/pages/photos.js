@@ -10,10 +10,6 @@ const PhotosPage = ({ data }) => {
   const [viewerState, setViewerState] = React.useState("hidden")
   const [currentIndex, setCurrentIndex] = React.useState(0)
 
-  React.useEffect(() => {
-    console.log(data.allFile)
-  }, [])
-
   return (
     <Layout>
       <Seo title="Мои фото | Ведущий Алексей Горбунов. +7 985 644 64 89" />
