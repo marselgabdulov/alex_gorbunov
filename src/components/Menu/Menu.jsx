@@ -1,24 +1,19 @@
 import * as React from "react"
-import { MenuContext } from "../../MenuContext"
 import { Link } from "gatsby"
 import CrossIcon from "../icons/CrossIcon"
 import { links } from "../../links"
 import "./Menu.scss"
 
-function Menu() {
-  const [value, setValue] = React.useContext(MenuContext)
-
-  function handleMenu() {
-    value === "closed" ? setValue("opened") : setValue("closed")
+const Menu = ({ menuState, setMenuState }) => {
+  const handleMenu = () => {
+    menuState === "closed" ? setMenuState("opened") : setMenuState("closed")
   }
 
   return (
     <>
-      <div className={value === "opened" ? "menu--opened" : "menu--closed"}>
+      <div className={menuState === "opened" ? "menu--opened" : "menu--closed"}>
         <button className="menu__close-button" onClick={handleMenu}>
-          <div className="button-icon">
-            <CrossIcon />
-          </div>
+          <CrossIcon />
         </button>
 
         <div className="menu__list">

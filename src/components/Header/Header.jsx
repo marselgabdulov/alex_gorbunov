@@ -2,13 +2,12 @@ import * as React from "react"
 import { Link } from "gatsby"
 import BurgerIcon from "../icons/BurgerIcon"
 import "./Header.scss"
-import { MenuContext } from "../../MenuContext"
 import { links } from "../../links"
 
-const Header = () => {
-  const [value, setValue] = React.useContext(MenuContext)
-  function handleMenu() {
-    value === "closed" ? setValue("opened") : setValue("closed")
+const Header = ({ menuState, setMenuState }) => {
+  const handleMenu = () => {
+    console.log("header burger clicked")
+    menuState === "closed" ? setMenuState("opened") : setMenuState("closed")
   }
   return (
     <header>
@@ -25,9 +24,9 @@ const Header = () => {
             </Link>
           ))}
         </div>
-        <div className="menu__button">
+        <button className="menu__button" onClick={handleMenu}>
           <BurgerIcon />
-        </div>
+        </button>
         <div className="social">
           <a
             className="social__link"

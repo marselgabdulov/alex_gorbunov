@@ -8,11 +8,6 @@
   z-index: 100000;
   font-weight: 700;
 
-  svg {
-    fill: white;
-    stroke: white;
-  }
-
   a {
     color: white;
     text-decoration: none;
@@ -22,6 +17,14 @@
       color: #f77905;
     }
   }
+}
+
+.menu__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
 }
 
 .menu,
@@ -58,9 +61,8 @@
 
   .menu__button {
     top: 0.75%;
-    right: 1.9em;
-    width: 1.5em;
-    height: 1.5em;
+    right: 0;
+    z-index: 10000;
   }
 
   .social {
@@ -91,9 +93,8 @@
 
   .menu__button {
     top: 0.75%;
-    right: 1.9em;
-    width: 1.5em;
-    height: 1.5em;
+    right: 0;
+    z-index: 10000;
   }
 
   .social {
@@ -123,10 +124,9 @@
   }
 
   .menu__button {
-    top: 2%;
-    right: 4%;
-    width: 2em;
-    height: 2em;
+    top: 0.75%;
+    right: 0;
+    z-index: 10000;
   }
 
   .social {

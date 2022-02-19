@@ -1,7 +1,6 @@
 import * as React from "react"
 import AOS from "aos"
 import { useStaticQuery, graphql } from "gatsby"
-import { MenuContext } from "../MenuContext"
 import Menu from "./Menu/Menu"
 import { Helmet } from "react-helmet"
 import Header from "./Header/Header"
@@ -18,7 +17,7 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const [value, setValue] = React.useState("closed")
+  const [menuState, setMenuState] = React.useState("closed")
 
   React.useEffect(() => {
     AOS.init()
@@ -41,11 +40,13 @@ const Layout = ({ children }) => {
         ></script>
       </Helmet>
 
-      <MenuContext.Provider value={[value, setValue]}>
-        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-        <Menu />
-        <main>{children}</main>
-      </MenuContext.Provider>
+      <Header
+        siteTitle={data.site.siteMetadata?.title || `Title`}
+        menuState={menuState}
+        setMenuState={setMenuState}
+      />
+      <Menu menuState={menuState} setMenuState={setMenuState} />
+      <main>{children}</main>
     </>
   )
 }

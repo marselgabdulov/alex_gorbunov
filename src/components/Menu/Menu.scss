@@ -17,15 +17,6 @@
   transition: transform 0.5s ease-in-out;
   overflow: hidden;
   z-index: 10000000;
-
-  .menu__close-button {
-    .button-icon {
-      svg {
-        fill: white !important;
-        stroke: white !important;
-      }
-    }
-  }
 }
 
 .menu--closed {
@@ -41,15 +32,12 @@
   position: fixed;
   background-color: transparent;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     cursor: pointer;
-  }
-
-  .button-icon {
-    position: absolute;
-    top: 0;
-    right: 0;
   }
 }
 
@@ -100,7 +88,7 @@
 @media (min-width: 320px) and (max-width: 479px) {
   .menu__close-button {
     top: 2%;
-    right: 2.5em;
+    right: 0;
 
     .button-icon {
       width: 1.75em;
@@ -127,7 +115,7 @@
 @media (min-width: 480px) and (max-width: 767px) {
   .menu__close-button {
     top: 2%;
-    right: 2.5em;
+    right: 0;
 
     .button-icon {
       width: 1.75em;
@@ -154,12 +142,7 @@
 @media (min-width: 768px) and (max-width: 999px) {
   .menu__close-button {
     top: 1.25em;
-    right: 2.5em;
-
-    .button-icon {
-      width: 1.75em;
-      height: 1.75em;
-    }
+    right: 0;
   }
 
   .menu__list {
