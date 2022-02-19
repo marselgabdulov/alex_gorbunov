@@ -5,7 +5,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group"
 import Seo from "../components/seo"
 import "./styles/about.scss"
 
-function AboutPage({ data }) {
+const AboutPage = ({ data }) => {
   const [currentIndex, setCurrentIndex] = React.useState(0)
   const images = [
     data.firstImage.childImageSharp.fluid.src,
