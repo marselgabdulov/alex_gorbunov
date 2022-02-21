@@ -11,24 +11,46 @@ const Carousel = ({
   setViewerState,
   setCurrentIndex,
 }) => {
-  const handleViewer = () => {
+  const handleUserKeyPress = e => {
+    if (e.keyCode == 32 || e.keyCode == 39) {
+      handleNext()
+    }
+    if (e.keyCode == 37) {
+      handlePrev()
+    }
+    if (e.keyCode == 27) {
+      handleCarousel()
+    }
+  }
+
+  React.useEffect(() => {
+    window.addEventListener("keydown", handleUserKeyPress)
+    return () => {
+      window.removeEventListener("keydown", handleUserKeyPress)
+    }
+  }, [handleUserKeyPress])
+
+  const handleCarousel = () => {
     viewerState === "hidden"
       ? setViewerState("visible")
       : setViewerState("hidden")
   }
+
   const handlePrev = () => {
     currentIndex === 0
       ? setCurrentIndex(images.allFile.edges.length - 1)
       : setCurrentIndex(prevIndex => prevIndex - 1)
   }
+
   const handleNext = () => {
     currentIndex === images.allFile.edges.length - 1
       ? setCurrentIndex(0)
       : setCurrentIndex(prevIndex => prevIndex + 1)
   }
+
   return (
-    <div className={`carousel--${viewerState}`}>
-      <div className="carousel__bg" onClick={handleViewer}></div>
+    <div className={`carousel--${viewerState}`} onKeyDown={handleUserKeyPress}>
+      <div className="carousel__bg" onClick={handleCarousel}></div>
       <div className="carousel__content">
         <button className="btn carousel__left" onClick={handlePrev}>
           <LeftIcon />
@@ -43,7 +65,7 @@ const Carousel = ({
           <RightIcon />
         </button>
       </div>
-      <button className="btn carousel__close" onClick={handleViewer}>
+      <button className="btn carousel__close" onClick={handleCarousel}>
         <CrossIcon />
       </button>
     </div>
