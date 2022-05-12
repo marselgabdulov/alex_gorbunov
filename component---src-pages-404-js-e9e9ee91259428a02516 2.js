@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[883],{429:function(e,t,a){a.r(t);var l=a(7294),n=a(293),r=a(9357),u=a(1597);t.default=function(){return l.createElement(n.Z,null,l.createElement(r.Z,{title:"404: Такой страницы нет"}),l.createElement("div",{className:"not-found-page"},l.createElement("h1",null,"404: Такой страницы нет"),l.createElement(u.Link,{to:"/",title:"вернуться на главную"},"Вернуться на главную")))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-e9e9ee91259428a02516.js.map
