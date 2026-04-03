@@ -40,6 +40,7 @@ export const query = graphql`
         extension: { regex: "/(jpg)/" }
         relativeDirectory: { eq: "photo-gallery" }
       }
+      sort: { fields: name, order: DESC }
     ) {
       edges {
         node {
