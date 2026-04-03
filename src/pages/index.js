@@ -14,7 +14,7 @@ const IndexPage = () => (
       <BGVideoMobile />
       <div className="intro-text">
         <h1 className="title">Ведущий Алексей Горбунов</h1>
-        <h2 className="subtitle">Умный московский юмор</h2>
+        <h2 className="subtitle">Умный юмор без пошлостей</h2>
         <a href="tel:+79856446489" className="phone">
           +7 985 644 64 89
         </a>
