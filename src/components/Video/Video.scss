@@ -1,0 +1,292 @@
+.video-cover {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .video-name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+
+  .cover__wrapper {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 17%;
+
+    transition: all 1s ease-in-out;
+    filter: brightness(0.9);
+
+    &:hover {
+      transform: scale(1.05);
+      filter: brightness(1);
+    }
+  }
+
+  .cover__button {
+    position: absolute;
+    background-color: #ee7b02;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 0.75s ease-in-out;
+
+    &:hover {
+      filter: brightness(0.75);
+    }
+
+    svg {
+      fill: white;
+      position: absolute;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.video-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; //16 x 9
+  position: relative;
+  .player {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video__full--hidden {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.video__full--visible {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  visibility: visible;
+  background: black;
+  z-index: 10000000;
+
+  .close-full {
+    position: absolute;
+    z-index: 12000;
+    svg {
+      fill: white;
+    }
+
+    &:hover {
+      cursor: pointer;
+      svg {
+        fill: #f1891d;
+      }
+    }
+  }
+
+  .full__wrapper {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin-top: 2.5%;
+    margin-left: 5%;
+
+    .youtube-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: auto;
+      min-height: 100%;
+      z-index: 110000;
+    }
+  }
+}
+
+// mobile
+@media (max-width: 599px) {
+  .video-cover {
+    height: 40vh;
+    .video-name {
+      top: 70%;
+      left: 0;
+      font-weight: bold;
+    }
+
+    .cover__button {
+      width: 70px;
+      height: 70px;
+      top: calc(50% - 35px);
+      left: calc(50% - 35px);
+
+      svg {
+        top: 27.5%;
+        left: 28.5%;
+        width: 2em;
+        height: 2em;
+      }
+    }
+  }
+  .video__full--visible {
+    .close-full {
+      top: 89%;
+      right: 0%;
+      svg {
+        width: 2.5em;
+        height: 2.5em;
+      }
+    }
+  }
+}
+
+// tublet-portrait
+@media (min-width: 600px) {
+  .video-cover {
+    height: 40vh;
+    .video-name {
+      top: 65%;
+      left: 0;
+    }
+
+    .cover__button {
+      width: 70px;
+      height: 70px;
+      top: calc(50% - 35px);
+      left: calc(50% - 35px);
+
+      svg {
+        top: 27.5%;
+        left: 28.5%;
+        width: 2em;
+        height: 2em;
+      }
+    }
+  }
+
+  .video__full--visible {
+    .close-full {
+      top: 49%;
+      right: 0%;
+      svg {
+        width: 2.5em;
+        height: 2.5em;
+      }
+    }
+  }
+}
+
+// tablet-landscape
+@media (min-width: 900px) {
+  .video-cover {
+    height: 50vh;
+    .video-name {
+    }
+
+    .cover__button {
+      width: 70px;
+      height: 70px;
+      top: calc(50% - 35px);
+      left: calc(50% - 35px);
+
+      svg {
+        top: 27.5%;
+        left: 28.5%;
+        width: 2em;
+        height: 2em;
+      }
+    }
+  }
+
+  .video__full--visible {
+    .close-full {
+      top: 49%;
+      right: 2%;
+      svg {
+        width: 2.5em;
+        height: 2.5em;
+      }
+    }
+  }
+}
+
+// desktop/laptop
+@media (min-width: 1200px) {
+  .video-cover {
+    height: 50vh;
+    .video-name {
+    }
+
+    .cover__button {
+      width: 70px;
+      height: 70px;
+      top: calc(50% - 35px);
+      left: calc(50% - 35px);
+
+      svg {
+        top: 27.5%;
+        left: 28.5%;
+        width: 2em;
+        height: 2em;
+      }
+    }
+  }
+
+  .video__full--visible {
+    .close-full {
+      top: 49%;
+      right: 2%;
+      svg {
+        width: 2.5em;
+        height: 2.5em;
+      }
+    }
+  }
+}
+
+// desktop x-large
+@media (min-width: 1800px) {
+  .video-cover {
+    height: 50vh;
+    .video-name {
+    }
+
+    .cover__button {
+      width: 70px;
+      height: 70px;
+      top: calc(50% - 35px);
+      left: calc(50% - 35px);
+
+      svg {
+        top: 27.5%;
+        left: 28.5%;
+        width: 2em;
+        height: 2em;
+      }
+    }
+  }
+
+  .video__full--visible {
+    .close-full {
+      top: 49%;
+      right: 5%;
+      svg {
+        width: 2.5em;
+        height: 2.5em;
+      }
+    }
+  }
+}

@@ -1,3 +1,15 @@
+.videos-page__scroll::-webkit-scrollbar {
+  display: none !important;
+}
+
+.videos-page__scroll {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  z-index: 2;
+}
+
 // mobile portrait
 @media (min-width: 320px) and (max-width: 479px) {
   .videos-page {

@@ -12,13 +12,13 @@ const Carousel = ({
   setCurrentIndex,
 }) => {
   const handleUserKeyPress = e => {
-    if (e.keyCode == 32 || e.keyCode == 39) {
+    if (e.keyCode === 32 || e.keyCode === 39) {
       handleNext()
     }
-    if (e.keyCode == 37) {
+    if (e.keyCode === 37) {
       handlePrev()
     }
-    if (e.keyCode == 27) {
+    if (e.keyCode === 27) {
       handleCarousel()
     }
   }
