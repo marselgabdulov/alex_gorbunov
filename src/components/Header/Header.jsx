@@ -6,7 +6,6 @@ import { links } from "../../links"
 
 const Header = ({ menuState, setMenuState }) => {
   const handleMenu = () => {
-    console.log("header burger clicked")
     menuState === "closed" ? setMenuState("opened") : setMenuState("closed")
   }
   return (

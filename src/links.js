@@ -24,11 +24,7 @@ export const links = [
     name: "договор",
     title: "как я работаю",
   },
-  {
-    to: "/reviews",
-    name: "отзывы",
-    title: "отзывы",
-  },
+
   {
     to: "/contacts",
     name: "контакты",
